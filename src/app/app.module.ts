@@ -4,10 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MaterialModule } from './material.module';
+
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
-import { MaterialModule } from './material.module';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
+import { UsersComponent } from './users/users.component';
+import { EmployeesComponent } from './employees/employees.component';
+
 
 
 @NgModule({
@@ -15,6 +21,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     AppComponent,
     LoginComponent,
     MainComponent,
+    NavbarComponent,
+    SearchbarComponent,
+    UsersComponent,
+    EmployeesComponent,
   ],
   imports: [
     BrowserModule,
