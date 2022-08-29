@@ -1,0 +1,17 @@
+.button-container{
+  position: relative;
+  width: 6rem;
+  height: 7rem;
+  border-radius: 30px;
+}
+.main-btn{
+position: absolute;
+top: calc(50% - 22px);
+border: none;
+outline: none;
+background-color: #f0f8ff3d;
+}
+
+.image{
+  opacity: 10%;
+}

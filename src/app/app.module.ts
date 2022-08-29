@@ -13,6 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { UsersComponent } from './users/users.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { MainButtonComponent } from './components/main-button/main-button.component';
+import { ListImageNameUserComponent } from './components/list-image-name-user/list-image-name-user.component';
+import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
 
 
 
@@ -25,6 +28,9 @@ import { EmployeesComponent } from './employees/employees.component';
     SearchbarComponent,
     UsersComponent,
     EmployeesComponent,
+    MainButtonComponent,
+    ListImageNameUserComponent,
+    AddEmployeeComponent,
   ],
   imports: [
     BrowserModule,

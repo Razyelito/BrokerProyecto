@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "broker"
+  "defaultProject": "broker",
+  "cli": {
+    "analytics": "04b167cd-c89c-4151-a599-10121001676b"
+  }
 }
