@@ -16,6 +16,8 @@ import { EmployeesComponent } from './employees/employees.component';
 import { MainButtonComponent } from './components/main-button/main-button.component';
 import { ListImageNameUserComponent } from './components/list-image-name-user/list-image-name-user.component';
 import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
+import { GeneralBtnComponent } from './components/general-btn/general-btn.component';
+import { ViewEmployeeComponent } from './pages/view-employee/view-employee.component';
 
 
 
@@ -31,6 +33,8 @@ import { AddEmployeeComponent } from './pages/add-employee/add-employee.componen
     MainButtonComponent,
     ListImageNameUserComponent,
     AddEmployeeComponent,
+    GeneralBtnComponent,
+    ViewEmployeeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,107 @@
-<p>add-employee works!</p>
+<app-navbar></app-navbar>
+<div class="flexRowCenterContainer">
+    <mat-icon class="icono">person_add</mat-icon>
+</div>
+<form class = "contacto" action="">
+    <fieldset class="form-container">
+        <legend>Información  Personal</legend>
+        <label class = "form-label" for="cedula">Cedula: </label>
+        <input type="text" id="cedula" required placeholder="Cedula">
+
+        <label class = "form-label" for="nombres">Nombre: </label>
+        <input type="text" id="nombre" required placeholder="Tu Nombre">
+
+        <label class = "form-label" for="apellidos">Apellido: </label>
+        <input type="text" id="apellidos" required placeholder="Tu Apellido">
+
+        <label class = "form-label" for="telefono">Telefono: </label>
+        <input type="tel" id="telefono" required placeholder="Telefono">
+
+        <label class = "form-label" for="correo">E-MAIL: </label>
+        <input type="mail" required id="correo" placeholder="Correo">
+
+        <label class="form-label" for="fecha">Fecha Nacimiento: </label>
+        <input required type="date" id = "fecha" >
+
+        <label class="form-label" for="estado_civil">Estado Civil: </label>
+        <select  id="estado_civil">
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="viudo">Viudo</option>
+            <option value="divorciado">Divorciado</option>
+        </select>
+
+        <label class="form-label" for="genero">Genero: </label>
+        <select  id="genero">
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+
+        </select>
+
+        <label class="form-label" for="pais">Pais: </label>
+        <input required type="text" id = "pais" placeholder="Pais" >
+
+
+        <label class="form-label" for="provincia">Provincia: </label>
+        <input required id="provincia" list="Provincia" placeholder="Provincia">
+            <datalist id="Provincia">
+                <option value="Azuay" selected="selected">Azuay</option>
+                <option value="Cañar">Cañar</option>
+                <option value="Loja">Loja</option>
+                <option value="Carchi">Carchi</option>
+                <option value="Imbabura">Imbabura</option>
+                <option value="Pichincha">Pichincha</option>
+                <option value="Cotopaxi">Cotopaxi</option>
+                <option value="Tungurahua">Tungurahua</option>
+                <option value="Bolívar">Bolívar</option>
+                <option value="Chimborazo">Chimborazo</option>
+                <option value="Sto. Domingo de los Tsachilas">Sto. Domingo de los Tsachilas</option>
+                <option value="Esmeraldas">Esmeraldas</option>
+                <option value="Manabí">Manabí</option>
+                <option value="Guayas">Guayas</option>
+                <option value="Los Ríos">Los Ríos</option>
+                <option value="El Oro">El Oro</option>
+                <option value="Santa Elena">Santa Elena</option>
+                <option value="Sucumbíos">Sucumbíos</option>
+                <option value="Napo">Napo</option>
+                <option value="Pastaza">Pastaza</option>
+                <option value="Orellana">Orellana</option>
+                <option value="Morona Santiago">Morona Santiago</option>
+                <option value="Zamora Chinchipe">Zamora Chinchipe</option>
+                <option value="Galápagos">Galápagos</option>
+                <option value="Antártida Ecuatoriana">Antártida Ecuatoriana</option>
+
+            </datalist>
+
+
+
+        <label class = "form-label" for="ciduad">Ciudad: </label>
+        <input type="text" id="ciudad" required placeholder="Ciudad">
+
+        <label class = "form-label" for="fecha_ingreso">Fecha Ingreso a noboa: </label>
+        <input required type="date" id = "fecha_ingreso" >
+
+        <label class = "form-label" for="anexo">Anexo: </label>
+        <input type="text" id="anexo" required placeholder="FALTA CAMBIAR POR UN INPUT DE TIPO ARCHIVO">
+
+        <label class="form-label" for="genero">Rol: </label>
+        <select  id="genero">
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="ventas">Ventas</option>
+            <option value="cobranzas">Cobranzas</option>
+            <option value="asesor">Asesor</option>
+            <option value="admin">Admin</option>
+
+        </select>
+
+    </fieldset>
+    <div class="flexRowCenterContainer">
+       <app-general-btn
+       title="Agregar Empleado"
+       ></app-general-btn>
+    </div>
+
+
+</form>

@@ -24,3 +24,43 @@ img{
   align-items: center;
   gap:0.1rem;
 }
+.form-container{
+    margin: 10px;
+    border: 2px solid;
+    padding: 10px;
+}
+.contacto{
+    max-height: 30rem;
+    overflow: scroll;
+}
+.contacto .form-label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    }
+
+ .contacto input {
+     margin-bottom: 1rem;
+ }
+ .contacto
+ input:not([type = "submit"]),
+ textarea,
+ select{
+    background-color: #e1e1e1;
+    padding: 1rem;
+    width: 100%;
+    display:block;
+    border:none;
+    border-radius: 1rem;
+    margin-bottom: 0.8rem;
+ }
+
+ .contacto select{
+    appearance: none;
+ }
+
+ .contacto legend{
+     margin: 0 auto;
+
+ }
