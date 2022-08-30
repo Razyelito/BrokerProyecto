@@ -18,6 +18,10 @@ import { ListImageNameUserComponent } from './components/list-image-name-user/li
 import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
 import { GeneralBtnComponent } from './components/general-btn/general-btn.component';
 import { ViewEmployeeComponent } from './pages/view-employee/view-employee.component';
+import { MainClientComponent } from './pages/main-client/main-client.component';
+import { CuentaComponent } from './pages/cuenta/cuenta.component';
+import { CambioContrasenaComponent } from './pages/cambio-contrasena/cambio-contrasena.component';
+import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
 
 
 
@@ -35,6 +39,10 @@ import { ViewEmployeeComponent } from './pages/view-employee/view-employee.compo
     AddEmployeeComponent,
     GeneralBtnComponent,
     ViewEmployeeComponent,
+    MainClientComponent,
+    CuentaComponent,
+    CambioContrasenaComponent,
+    RecoverPasswordComponent,
   ],
   imports: [
     BrowserModule,

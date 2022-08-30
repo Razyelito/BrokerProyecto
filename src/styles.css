@@ -64,3 +64,13 @@ img{
      margin: 0 auto;
 
  }
+ .main{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    column-gap: 10px;
+    max-height: 32rem;
+    overflow-y: scroll;
+}

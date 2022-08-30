@@ -8,7 +8,7 @@ import { Component, OnInit,Input } from '@angular/core';
 export class ListImageNameUserComponent implements OnInit {
 
     @Input() name: string = 'Nombre Apellido';
-
+    @Input() router_link: string = ''
   constructor() { }
 
   ngOnInit(): void {

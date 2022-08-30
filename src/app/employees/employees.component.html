@@ -7,11 +7,12 @@
 <div class="flexColumnCenterContainer employees_container">
     <app-list-image-name-user *ngFor="let empleado of empleados"
     name={{empleado.nombre}}
+    router_link="/view_employee"
     ></app-list-image-name-user>
 
 </div>
 <div class="btn_agregar-container">
-    <button routerLink= "/Add_Employee" title="agregar-empleado" class="agregar_empleado" mat-button>
+    <button routerLink= "/add_employee" title="agregar-empleado" class="agregar_empleado" mat-button>
         <mat-icon class="icono">person_add</mat-icon>
     </button>
 </div>

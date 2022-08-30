@@ -1,0 +1,9 @@
+.info-cuenta{
+    margin: 0
+}
+.container-option{
+    justify-content:flex-start;
+    width:14rem;
+    gap:1rem;
+    margin-top: 1rem;
+}
