@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2'
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-cambio-contrasena',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CambioContrasenaComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  actualizaContrasena(){
+    Swal.fire("Se ha actualizado su contrasena", "success");
+    this.router.navigate(['/main'])
+
   }
 
 }

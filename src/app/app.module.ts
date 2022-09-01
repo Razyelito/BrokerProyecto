@@ -22,6 +22,9 @@ import { MainClientComponent } from './pages/main-client/main-client.component';
 import { CuentaComponent } from './pages/cuenta/cuenta.component';
 import { CambioContrasenaComponent } from './pages/cambio-contrasena/cambio-contrasena.component';
 import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { PublicidadComponent } from './components/publicidad/publicidad.component';
+import { LandingBtnComponent } from './components/landing-btn/landing-btn.component';
 
 
 
@@ -43,6 +46,9 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
     CuentaComponent,
     CambioContrasenaComponent,
     RecoverPasswordComponent,
+    LandingComponent,
+    PublicidadComponent,
+    LandingBtnComponent,
   ],
   imports: [
     BrowserModule,

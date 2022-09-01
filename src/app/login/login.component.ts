@@ -28,7 +28,9 @@ export class LoginComponent implements OnInit {
     const password = this.form.value.password;
 
     if(usuario == "admin" && password == "123"){
-      this.temploading();
+      this.temploading(0);
+    }else if(usuario == "cliente" && password == "123"){
+        this.temploading(1);
     }else{
       this.error();
       this.form.reset();
@@ -42,14 +44,13 @@ export class LoginComponent implements OnInit {
       verticalPosition:"top"
     })
   }
-  
-  temploading(){
+
+  temploading(n:number){
     this.loading = true;
 
     setTimeout(() => {
-      
-      this.router.navigate(['main']);
-      
+      (n==0)?this.router.navigate(['main']):this.router.navigate(['main/client'])
+
     }, 1300);
   }
 

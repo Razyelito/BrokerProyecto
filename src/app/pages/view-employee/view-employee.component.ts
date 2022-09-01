@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2'
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-view-employee',
@@ -12,9 +14,17 @@ export class ViewEmployeeComponent implements OnInit {
     apellido: string='Perez';
     mail: string='correo@ejemplo.com';
 
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  desvincular():void{
+    Swal.fire("Se ha desvinculado al empleado",`${this.nombre}`, "success");
+    this.router.navigate(['/employees'])
+
   }
 
 }

@@ -1,0 +1,22 @@
+.carousel-item{
+    height:11vh;
+}
+.carousel{
+    height:11vh;
+    background-color: #dbdbdb;
+}
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    gap:1rem;
+}
+.title{
+margin: 0.5rem 0 0.4rem 0;
+}
+.btns-container{
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+

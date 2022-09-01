@@ -1,0 +1,10 @@
+<button class ="flexRowCenterContainer btn">
+    <p>{{title}}</p>
+    <figure *ngIf="!isContact" class="image-container">
+        <img [src]="urlImg" alt="image">
+    </figure>
+    <mat-icon *ngIf="isContact" class="icon-container"> call</mat-icon>
+
+</button>
+
+

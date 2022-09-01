@@ -5,17 +5,20 @@
 </div>
 
 <div class="flexColumnCenterContainer">
-    <form id="formulario" action="" class="password-form">
-        <input type="password">
-        <input type="password">
-        <input type="password">
-    </form>
-    <app-general-btn
+    <form id="formulario" action="" class="flexColumnCenterContainer password-form">
+        <input type="password" placeholder="Ingrese contrasena actual">
+        <input type="password" placeholder="Ingrese nueva contrasena">
+        <input type="password" placeholder="Confirmar nueva contrasena">
+        <app-general-btn
+    (click) ="actualizaContrasena()"
     title="Actualizar"
     ></app-general-btn>
     <app-general-btn
     title="Cancelar"
     ></app-general-btn>
+
+    </form>
+
 
 </div>
 
