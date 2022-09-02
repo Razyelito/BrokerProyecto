@@ -1,22 +1,28 @@
 <app-navbar></app-navbar>
-<div class="flexColumnCenterContainer">
-    <h2 class="title"> Empleados</h2>
-    <app-searchbar></app-searchbar>
-</div>
+<div class="main-container">
+    <div class="flexColumnCenterContainer">
+        <h2 class="title"> Empleados</h2>
+        <app-searchbar></app-searchbar>
+    </div>
 
-<div class="flexColumnCenterContainer employees_container">
-    <app-list-image-name-user *ngFor="let empleado of empleados"
-    name={{empleado.nombre}}
-    router_link="/view_employee"
-    ></app-list-image-name-user>
+    <section class="scrollContainer">
+        <div class="flexColumnCenterContainer employees_container">
+            <app-list-image-name-user *ngFor="let empleado of empleados"
+            name={{empleado.nombre}}
+            router_link="/view_employee"
+            ></app-list-image-name-user>
+
+        </div>
+
+    </section>
+    <div class="btn_agregar-container">
+        <button routerLink= "/add_employee" title="agregar-empleado" class="agregar_empleado" mat-button>
+            <mat-icon class="icono">person_add</mat-icon>
+        </button>
+    </div>
+
 
 </div>
-<div class="btn_agregar-container">
-    <button routerLink= "/add_employee" title="agregar-empleado" class="agregar_empleado" mat-button>
-        <mat-icon class="icono">person_add</mat-icon>
-    </button>
-</div>
-
 
 
 <!-- <div class="employees_container">
