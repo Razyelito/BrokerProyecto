@@ -6,13 +6,13 @@
     <fieldset class="form-container">
         <legend>Información  Personal</legend>
         <label class = "form-label" for="cedula">Cedula: </label>
-        <input type="text" id="cedula" required placeholder="Cedula">
+        <input  type="text" id="cedula" required placeholder="Cedula" >
 
         <label class = "form-label" for="nombres">Nombre: </label>
-        <input type="text" id="nombre" required placeholder="Tu Nombre">
+        <input type="text" id="nombre" required placeholder="Tu Nombre" [(ngModel)] = "nombre" name="null_str">
 
         <label class = "form-label" for="apellidos">Apellido: </label>
-        <input type="text" id="apellidos" required placeholder="Tu Apellido">
+        <input type="text" id="apellidos" required placeholder="Tu Apellido"  [(ngModel)] = "nombre" name="null_str">
 
         <label class = "form-label" for="telefono">Telefono: </label>
         <input type="tel" id="telefono" required placeholder="Telefono">
@@ -99,6 +99,7 @@
     </fieldset>
     <div class="flexRowCenterContainer">
        <app-general-btn
+       (click) = "addEmployee()"
        title="Agregar Empleado"
        ></app-general-btn>
     </div>
