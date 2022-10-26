@@ -11,6 +11,7 @@ export class LandingBtnComponent implements OnInit {
   @Input() urlImg:string='';
   @Input() title:string='';
   @Input()isContact:boolean=false;
+  @Input() router_link:string = '';
 
   ngOnInit(): void {
   }

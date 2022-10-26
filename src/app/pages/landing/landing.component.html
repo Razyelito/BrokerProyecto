@@ -1,6 +1,12 @@
 <app-navbar></app-navbar>
+
+
 <app-publicidad></app-publicidad>
+
+<!-- Titulo -->
 <h3 class="title">Aseguradoras</h3>
+
+<!-- Carrusel de los logos de las aseguradores pertenecientes al broker-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -19,17 +25,24 @@
     </button>
     </div>
 </div>
+
+<!-- Botones del landing para acceder-->
 <div class="flexColumnCenterContainer btns-container">
     <app-landing-btn
     title="Ver Ofertas de seguros disponibles"
     urlImg = "./assets/img/ofertas-btn.png"
+    router_link = "/ofertas"
     ></app-landing-btn>
     <app-landing-btn
     title="Cotizar Plan"
     urlImg = "./assets/img/cotizar-btn.png"
+    router_link = "/cotizador"
     ></app-landing-btn>
     <app-landing-btn
     title="Contacto"
     [isContact]=true
+    router_link = "/contactus"
     ></app-landing-btn>
 </div>
+
+

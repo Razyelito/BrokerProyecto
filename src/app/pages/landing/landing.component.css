@@ -1,8 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .carousel-item{
     height:11vh;
 }
 .carousel{
-    height:11vh;
+    height: 20vh;
     background-color: #dbdbdb;
 }
 .carousel-inner{

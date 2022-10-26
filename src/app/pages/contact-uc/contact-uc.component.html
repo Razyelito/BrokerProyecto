@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="main">
+  
+  <mat-card class="container">
+    
+    <form class="formulario" action="/">
+      <h1>Para una mejor comunicación, por favor ingrese sus datos y nos contactaremos con usted</h1> 
+      <div class="info">
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Nombres</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Apellidos</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Correo</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Numero</mat-label>
+          <input matInput>
+        </mat-form-field>
+
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Comentarios</mat-label>
+          <textarea rows="4" matInput></textarea>
+        </mat-form-field>        
+      </div>
+      
+      <button mat-raised-button color="primary" type="submit" routerLink="/landing">Enviar Datos</button>
+    </form>
+
+  </mat-card>
+    
+</div>

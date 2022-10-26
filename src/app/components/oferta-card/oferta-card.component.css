@@ -1,0 +1,96 @@
+
+.ofertaCard{
+    background-color: #f2d089;
+    padding: 15px;
+    border-radius: 15px;
+    
+    
+}
+
+.fecha{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cuerpo{
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+}
+
+
+.derecha{
+    float: right;
+    width: 50%;
+}
+
+.izquierda{
+    float: left;
+    width: 50%;
+}
+
+.derecha{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.izquierda{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.derecha>p{
+    font-weight: bold;
+    font-size: large;
+}
+
+.derecha>div{
+    font-size: x-large;
+}
+
+.tipo{
+    font-size: 200%;     
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagenBack{
+    padding: 5px;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+.imagenLogo{
+    width: 25%;
+    height: 25%;
+}
+
+.pre{
+    text-decoration-line: line-through
+}
+
+.cobertura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+    margin-top: 2%;
+}
+
+.cobertura>div{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 3%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}

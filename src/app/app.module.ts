@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MaterialModule } from './material.module';
+import {MatCardModule} from '@angular/material/card';
 
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
@@ -26,6 +27,9 @@ import { RecoverPasswordComponent } from './pages/recover-password/recover-passw
 import { LandingComponent } from './pages/landing/landing.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { LandingBtnComponent } from './components/landing-btn/landing-btn.component';
+import { OfertaCardComponent } from './components/oferta-card/oferta-card.component';
+import { OfertasComponent } from './pages/ofertas/ofertas.component';
+import { ContactUCComponent } from './pages/contact-uc/contact-uc.component';
 
 
 
@@ -50,6 +54,10 @@ import { LandingBtnComponent } from './components/landing-btn/landing-btn.compon
     LandingComponent,
     PublicidadComponent,
     LandingBtnComponent,
+    OfertaCardComponent,
+    OfertasComponent,
+    ContactUCComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -57,7 +65,8 @@ import { LandingBtnComponent } from './components/landing-btn/landing-btn.compon
     BrowserAnimationsModule,
     MaterialModule,
     MatProgressSpinnerModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
