@@ -30,6 +30,7 @@ import { LandingBtnComponent } from './components/landing-btn/landing-btn.compon
 import { OfertaCardComponent } from './components/oferta-card/oferta-card.component';
 import { OfertasComponent } from './pages/ofertas/ofertas.component';
 import { ContactUCComponent } from './pages/contact-uc/contact-uc.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -57,6 +58,7 @@ import { ContactUCComponent } from './pages/contact-uc/contact-uc.component';
     OfertaCardComponent,
     OfertasComponent,
     ContactUCComponent,
+    FooterComponent,
     
   ],
   imports: [
