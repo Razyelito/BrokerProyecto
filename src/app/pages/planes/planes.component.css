@@ -1,0 +1,16 @@
+
+.body{
+
+}
+
+.container{
+    flex-direction: column;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.button-container{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}

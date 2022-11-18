@@ -71,6 +71,6 @@ img{
     grid-template-columns: auto auto;
     padding: 10px;
     column-gap: 10px;
-    max-height: 32rem;
+    
     overflow-y: scroll;
 }

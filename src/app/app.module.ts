@@ -31,7 +31,8 @@ import { OfertaCardComponent } from './components/oferta-card/oferta-card.compon
 import { OfertasComponent } from './pages/ofertas/ofertas.component';
 import { ContactUCComponent } from './pages/contact-uc/contact-uc.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { PlanesComponent } from './pages/planes/planes.component';
+import { PlanCardComponent } from './components/plan-card/plan-card.component';
 
 
 @NgModule({
@@ -59,6 +60,8 @@ import { FooterComponent } from './components/footer/footer.component';
     OfertasComponent,
     ContactUCComponent,
     FooterComponent,
+    PlanesComponent,
+    PlanCardComponent,
     
   ],
   imports: [

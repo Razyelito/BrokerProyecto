@@ -13,6 +13,7 @@ import {CuentaComponent} from './pages/cuenta/cuenta.component';
 import {LandingComponent} from './pages/landing/landing.component';
 import {OfertasComponent} from './pages/ofertas/ofertas.component';
 import {ContactUCComponent } from './pages/contact-uc/contact-uc.component';
+import { PlanesComponent } from './pages/planes/planes.component';
 
 
 
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path:'recover_password',component: RecoverPasswordComponent},
   {path:'cuenta',component: CuentaComponent},
   {path:'change_password',component: CambioContrasenaComponent},
+  {path: 'planes', component:PlanesComponent}
 ];
 
 @NgModule({

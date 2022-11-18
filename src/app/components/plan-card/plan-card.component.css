@@ -1,0 +1,37 @@
+.planCard{
+    border-radius: 4%;
+    box-shadow: 0 15px 30px 1px grey;
+    width: 90%;
+    height: 35%;
+    background-color: #dedede;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    
+}
+
+.button-container{
+    border-radius: 2%;
+    border-color: rgb(200, 200, 200);
+}
+
+.text-container{
+    border-radius: 2%;
+    background-color: rgb(244, 244, 244);
+    
+
+}
+.image-container{
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+image{
+}
