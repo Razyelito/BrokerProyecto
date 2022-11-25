@@ -33,6 +33,8 @@ import { ContactUCComponent } from './pages/contact-uc/contact-uc.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PlanesComponent } from './pages/planes/planes.component';
 import { PlanCardComponent } from './components/plan-card/plan-card.component';
+import { ContactInfoComponent } from './pages/contact-info/contact-info.component';
+import { CotizadorComponent } from './pages/cotizador/cotizador.component';
 
 
 @NgModule({
@@ -62,6 +64,8 @@ import { PlanCardComponent } from './components/plan-card/plan-card.component';
     FooterComponent,
     PlanesComponent,
     PlanCardComponent,
+    ContactInfoComponent,
+    CotizadorComponent,
     
   ],
   imports: [

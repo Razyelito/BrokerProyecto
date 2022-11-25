@@ -1,8 +1,7 @@
-<div class="button-container">
-  <figure class="image-container">
-      <img style="width: 100px;"  class ="image" [src]= "urlImg">
-  </figure>
-      <button  [routerLink]="router_link" class="main-btn">
-         {{title}}
-      </button>
-</div>
+
+      <div class="button-data">
+        <button class="main-btn" [routerLink]="router_link" >
+            <div class="titulo">{{title}}</div>
+            <img class ="image" [src]= "urlImg">
+         </button>
+      </div>

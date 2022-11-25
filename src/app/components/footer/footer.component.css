@@ -6,9 +6,14 @@
 }
 
 .icon {
-    padding: 0 14px;
+    color: white;
   }
 
   .spacer {
     flex: 1 1 auto;
   }
+
+  .bar{
+    background: linear-gradient(to right,  rgba(27,77,146,255), rgba(24,83,149,255) , rgba(33,186,227,255))
+  }
+

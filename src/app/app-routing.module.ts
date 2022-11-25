@@ -12,9 +12,11 @@ import {CambioContrasenaComponent} from './pages/cambio-contrasena/cambio-contra
 import {CuentaComponent} from './pages/cuenta/cuenta.component';
 import {LandingComponent} from './pages/landing/landing.component';
 import {OfertasComponent} from './pages/ofertas/ofertas.component';
+import { CotizadorComponent } from './pages/cotizador/cotizador.component';
+
 import {ContactUCComponent } from './pages/contact-uc/contact-uc.component';
 import { PlanesComponent } from './pages/planes/planes.component';
-
+import { ContactInfoComponent } from './pages/contact-info/contact-info.component';
 
 
 const routes: Routes = [
@@ -34,7 +36,10 @@ const routes: Routes = [
   {path:'recover_password',component: RecoverPasswordComponent},
   {path:'cuenta',component: CuentaComponent},
   {path:'change_password',component: CambioContrasenaComponent},
-  {path: 'planes', component:PlanesComponent}
+  {path: 'planes', component:PlanesComponent},
+  {path: 'contactinfo', component: ContactInfoComponent},
+  {path:'cotizador', component: CotizadorComponent}  
+
 ];
 
 @NgModule({

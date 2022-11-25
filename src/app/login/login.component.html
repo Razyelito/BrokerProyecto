@@ -1,29 +1,43 @@
-<div class="body">
+<div class="login-container">
+
     <div class="login">
 
         <mat-spinner *ngIf="loading" class="spinner" diameter="60"></mat-spinner>
         
-        <form  *ngIf="!loading"[formGroup]="form" (ngSubmit)="ingresar()">
-            <img class="image" src="./assets/img/users.png" >
+        <form class="form" *ngIf="!loading"[formGroup]="form" (ngSubmit)="ingresar()">
+             
+                <span class="image">
+                    <img class="login-icon" src="./assets/img/08.png" alt="">
+                </span>
+                
+                <span class="shadow"></span>
 
-            <h1>Login</h1>
+               <div class="usuario-container">
+
+                    <img class="user-icon" src="./assets/img/08.png" alt="">
+
+                    <input class="usuario-input" type="text" autocomplete="off" formControlName="usuario" placeholder="usuario">
+
+               </div>
+
+               <div class="contrasena-container">
+
+                    <img class="password-icon" src="./assets/img/09.png" alt="">
+
+                    <input class="contrasena-input" type="text" autocomplete="off" formControlName="password" placeholder="contraseña">
+
+               </div>
+
+               <div class="button-container">
+                    <button type="submit" class="submit-button" [disabled]="form.invalid">
+                        <p class="text">iniciar sesion</p>
+                    </button>
+               </div>
+
+               <div class="recuperar-contasena" href=""><a href="">Haz olvidado tu contraseña?</a></div>
+
             
-            <mat-form-field class="ancho" appearance="fill">
-                <mat-label>User</mat-label>
-                <input matInput autocomplete="off" formControlName="usuario">
-            </mat-form-field>
-
-            <mat-form-field class="ancho" appearance="fill">
-                <mat-label>password</mat-label>
-                <input type="password" matInput autocomplete="off" formControlName="password">
-            </mat-form-field>
-
-            <br>
-
-            <button type="submit" class="ancho button" mat-button color="primary" [disabled]="form.invalid">signup</button>
-            </form>
-
-            <br>
+        </form>
 
     </div>
     

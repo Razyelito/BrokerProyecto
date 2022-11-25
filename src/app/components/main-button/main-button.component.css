@@ -1,18 +1,15 @@
-.button-container{
-  position: relative;
-  width: 6rem;
-  height: 7rem;
-  border-radius: 30px;
+
+
+.button-data{
 }
 .main-btn{
-position: absolute;
-width: 100%;
-top: calc(50% - 22px);
+display: block;
+background-color: #124d8f;
 border: none;
-outline: none;
-background-color: #f0f8ff3d;
+overflow: hidden;
 }
 
-.image{
-  opacity: 10%;
+.titulo{
+  color: white;
 }
+

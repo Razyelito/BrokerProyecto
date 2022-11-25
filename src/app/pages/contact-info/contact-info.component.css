@@ -1,0 +1,66 @@
+
+.data-container{
+    text-align: center;
+    overflow: scroll;
+}
+
+.image{
+    position: relative;
+}
+
+img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.chat-container{
+    position: absolute;
+    bottom: 10%;
+    left: 58%;
+}
+
+.chat-button{
+    background-color: #2380a4;
+}
+
+.chaticon{
+    color: rgb(255, 255, 255);
+}
+
+.icon{
+    color: #2380a4;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: large;
+}
+
+.telefono{
+
+}
+
+.horario{
+
+}
+
+.correo{
+
+}
+
+.ubicacion{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.redes{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.redes-icon{
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+}
