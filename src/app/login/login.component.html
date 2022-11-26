@@ -2,9 +2,9 @@
 
     <div class="login">
 
-        <mat-spinner *ngIf="loading" class="spinner" diameter="60"></mat-spinner>
         
-        <form class="form" *ngIf="!loading"[formGroup]="form" (ngSubmit)="ingresar()">
+        
+        <form class="form" [formGroup]="myform" (ngSubmit)="onSubmit()">
              
                 <span class="image">
                     <img class="login-icon" src="./assets/img/08.png" alt="">
@@ -16,7 +16,7 @@
 
                     <img class="user-icon" src="./assets/img/08.png" alt="">
 
-                    <input class="usuario-input" type="text" autocomplete="off" formControlName="usuario" placeholder="usuario">
+                    <input class="usuario-input" type="text" autocomplete="off" formControlName="username" placeholder="usuario">
 
                </div>
 
@@ -24,12 +24,12 @@
 
                     <img class="password-icon" src="./assets/img/09.png" alt="">
 
-                    <input class="contrasena-input" type="text" autocomplete="off" formControlName="password" placeholder="contraseña">
+                    <input class="contrasena-input" type="password" autocomplete="off" formControlName="password" placeholder="contraseña">
 
                </div>
 
                <div class="button-container">
-                    <button type="submit" class="submit-button" [disabled]="form.invalid">
+                    <button type="submit" class="submit-button" >
                         <p class="text">iniciar sesion</p>
                     </button>
                </div>

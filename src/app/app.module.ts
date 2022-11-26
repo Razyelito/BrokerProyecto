@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +35,7 @@ import { PlanesComponent } from './pages/planes/planes.component';
 import { PlanCardComponent } from './components/plan-card/plan-card.component';
 import { ContactInfoComponent } from './pages/contact-info/contact-info.component';
 import { CotizadorComponent } from './pages/cotizador/cotizador.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -75,6 +75,7 @@ import { CotizadorComponent } from './pages/cotizador/cotizador.component';
     MaterialModule,
     MatProgressSpinnerModule,
     FormsModule,
+    HttpClientModule,
     MatCardModule
   ],
   providers: [],
