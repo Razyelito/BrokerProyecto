@@ -1,3 +1,4 @@
+
 .container{
     display: flex;
     flex-direction: column;
@@ -5,25 +6,37 @@
     width: 100%;
 }
 
-.carousel-item{
-    height:11vh;
-}
-.carousel{
-    height: 20vh;
-    background-color: #dbdbdb;
-}
-.carousel-inner{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    gap:1rem;
-}
+/*Titulo*/
+
 .title{
-margin: 0.5rem 0 0.4rem 0;
+    height: 5%;
+    margin: 0.5rem 0 0.4rem 0;
 }
+
+.title img{
+    height: 90%;
+    width: auto;
+    margin-left: 2%;
+}
+
+/*Carussel*/
+
+.carrusel{
+}
+
+/*Botones*/
+
 .btns-container{
-    margin-top: 1rem;
-    gap: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.landing-btn{
+    margin-bottom: 5%;
+    width: 60%;
 }
 

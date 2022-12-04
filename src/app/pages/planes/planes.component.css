@@ -1,6 +1,7 @@
 
-.body{
-
+.texto{
+    width: 100%;
+    text-align: center;
 }
 
 .container{
@@ -13,4 +14,9 @@
     position: fixed;
     bottom: 10%;
     right: 5%;
+}
+
+.plan{
+    height: 25%;
+    margin-top: 3%;
 }

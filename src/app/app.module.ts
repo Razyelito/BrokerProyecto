@@ -12,7 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SearchbarComponent } from './searchbar/searchbar.component';
+import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { UsersComponent } from './users/users.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { MainButtonComponent } from './components/main-button/main-button.component';
@@ -36,6 +36,8 @@ import { PlanCardComponent } from './components/plan-card/plan-card.component';
 import { ContactInfoComponent } from './pages/contact-info/contact-info.component';
 import { CotizadorComponent } from './pages/cotizador/cotizador.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
+
 
 @NgModule({
   declarations: [
@@ -66,6 +68,7 @@ import { HttpClientModule } from '@angular/common/http';
     PlanCardComponent,
     ContactInfoComponent,
     CotizadorComponent,
+    CarruselComponent,
     
   ],
   imports: [

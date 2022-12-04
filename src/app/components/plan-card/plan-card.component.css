@@ -1,37 +1,55 @@
 .planCard{
-    border-radius: 4%;
-    box-shadow: 0 15px 30px 1px grey;
-    width: 90%;
-    height: 35%;
-    background-color: #dedede;
+    height: 20%;
+    background-color: #004c8f ;
     display: inline-block;
     justify-content: center;
     align-items: center;
     margin-top: 3%;
 }
 
+.button-container{
+    background-color: #004c8f ;
+    border: none;
+    height: 100%;
+}
+
 .card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
-    
-}
-
-.button-container{
-    border-radius: 2%;
-    border-color: rgb(200, 200, 200);
 }
 
 .text-container{
     border-radius: 2%;
-    background-color: rgb(244, 244, 244);
-    
+    border: none;
+    color: white;
+    position: relative;
 
 }
+
+.titulo{
+    font-size: 3vw;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.texto{
+    font-size: 3vw;
+    text-align: justify;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
 .image-container{
     border-radius: 2%;
-    overflow: hidden;
+    position: relative;
 }
 
-image{
+.image{
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: -10%;
 }
+

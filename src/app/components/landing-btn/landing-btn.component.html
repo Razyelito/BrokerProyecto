@@ -1,8 +1,9 @@
-<button mat-raised-button color="primary" class ="flexRowCenterContainer btn" [routerLink]="router_link">
-    <p>{{title}}</p>
-    <figure *ngIf="!isContact" class="image-container">
-        <img [src]="urlImg" alt="image">
-    </figure>
-    <mat-icon *ngIf="isContact" class="icon-container"> call</mat-icon>
-
+<button  class ="btn" [routerLink]="router_link">
+    <div class="btn-data">
+        <div class="title">{{title}}</div>
+        <span class="spacer"></span>
+        <div class="bar"></div>
+        <span class="spacer"></span>
+        <div class="image"><img [src]="urlImg" alt="image"></div>
+    </div>
 </button>

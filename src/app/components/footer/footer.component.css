@@ -17,3 +17,7 @@
     background: linear-gradient(to right,  rgba(27,77,146,255), rgba(24,83,149,255) , rgba(33,186,227,255))
   }
 
+button{
+  height: 100%;
+  width: auto;
+}

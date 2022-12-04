@@ -4,45 +4,32 @@
 <app-publicidad></app-publicidad>
 
 <!-- Titulo -->
-<h3 class="title">Aseguradoras</h3>
+<h3 class="title">
+  <img src="./assets/img/01.png" alt="">
+  Aseguradoras
+</h3>
 
 <!-- Carrusel de los logos de las aseguradores pertenecientes al broker-->
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="../../../assets/img/latinaSeguros.png"  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../../../assets/img/LOGO-seguros-equinoccialSslogan.png" alt="...">
-      </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-</div>
-
+<app-carrusel class="carrusel"></app-carrusel>
 <!-- Botones del landing para acceder-->
-<div class="flexColumnCenterContainer btns-container">
-    <app-landing-btn
+<div class="btns-container">
+    <app-landing-btn class="landing-btn"
     title="Ver Ofertas de seguros disponibles"
-    urlImg = "./assets/img/ofertas-btn.png"
+    urlImg = "./assets/img/ofertas.png"
     router_link = "/ofertas"
     ></app-landing-btn>
-    <app-landing-btn
+    <app-landing-btn class="landing-btn"
     title="Cotizar Plan"
-    urlImg = "./assets/img/cotizar-btn.png"
+    urlImg = "./assets/img/plan.png"
     router_link = "/cotizador"
     ></app-landing-btn>
-    <app-landing-btn
+    <app-landing-btn class="landing-btn"
     title="Contacto"
-    [isContact]=true
+    urlImg = "./assets/img/contacto.png"
     router_link = "/contactus"
     ></app-landing-btn>
 </div>
+
+<app-footer></app-footer>
 
 
