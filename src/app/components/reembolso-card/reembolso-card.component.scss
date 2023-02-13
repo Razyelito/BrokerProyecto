@@ -1,0 +1,55 @@
+
+.reembolsoCard{
+    margin: 0 4%;
+    margin-bottom: 5%;
+}
+
+.container{
+    background-color: #004c8f;
+}
+
+.spacer{
+    padding: 5%;
+}
+
+.cuerpo{    
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    padding: 5%;
+}
+
+.texto, .imagen{
+    width:50%;
+    display:inline-block;
+}
+
+.texto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    color: #004c8f;
+}
+
+.descripcion{
+    margin: 6% 10%;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.botonContainer{
+    height: 40px;
+}
+
+.boton{
+    border-radius: 15px;
+    width: 26%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: 5%;
+    color: #004c8f;
+}

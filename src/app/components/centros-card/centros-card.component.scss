@@ -1,0 +1,74 @@
+.centroMedico{
+    margin-top: 5%;
+    height: 100px;
+    width: 100%;
+}
+
+.contenedor{
+    background-color: #114c90;
+    border-radius: 20px;
+    margin: 5%;
+    display: flex;
+    height: 100%;
+}
+
+.imagen{
+    width: 22%;
+    position: absolute;
+    margin-top: 2%;
+    left: 13%;
+    border-radius: 50%;
+}
+
+.izquierda{
+    width: 50%;
+}
+
+.derecha{
+    width: 50%;
+    display: flex;
+}
+
+.texto{
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha{
+    width: 30%;
+    transform: scale(-1);
+}
+
+.nombre{
+    font-weight: bolder;
+}
+
+.dirrecion{
+    font-weight: bold;
+    font-size: small;
+}
+
+.calles{
+    font-size: x-small;
+    text-align: -webkit-center;
+}
+
+.nombre, .dirrecion, .calles{
+    margin-bottom: 5%;
+}
+
+.flecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen2{
+    width: 7vw;
+    height: 5vh;
+    margin-right: 30%;
+}

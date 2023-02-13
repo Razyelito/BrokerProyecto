@@ -1,0 +1,33 @@
+
+.footer{
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+}
+
+.icon {
+    // color: white;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .bar{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,  rgba(27,77,146,255), rgba(24,83,149,255) , rgba(33,186,227,255));
+    height: 85px;
+    overflow: hidden;    
+  }
+
+button{
+  background-color: transparent;
+  //width: 80px;
+  //height: 80px;
+}
+
+.icon{
+  width: 121px;
+  height: 110px;
+}

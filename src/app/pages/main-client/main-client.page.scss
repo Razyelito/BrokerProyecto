@@ -1,0 +1,38 @@
+
+.main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+}
+
+.derecha, .izquierda{
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.D{
+    margin-left: 5%;
+}
+
+.I{
+    margin-right: 5%;
+}
+
+.button{
+    margin-bottom: 9%;
+}
+
+.hidden{
+    visibility: hidden;
+}

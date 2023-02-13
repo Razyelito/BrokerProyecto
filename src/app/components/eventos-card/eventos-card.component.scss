@@ -1,0 +1,67 @@
+
+.eventos-card{
+    margin: 1% 5% 8% 5%;
+    height: 120px;
+}
+
+.container{
+    background-color: #0f5295;
+    color: white;
+    height: 100%;
+}
+
+.derecha{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.izquierda{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.izquierda{
+    position: relative;
+}
+
+.derecha{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.imagen{
+    position: absolute;
+    width: 32vw;
+    height: auto;
+    top: -16%;
+    left: 15%
+}
+
+.numero{
+    width: 100%;
+    height: 10%;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    margin: 0;
+}
+
+.imagenBack{    
+    width: 65%    
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.descripcion{
+    font-size: x-small;
+}

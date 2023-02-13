@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from "@angular/forms";
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card'
 
 
 
@@ -16,7 +17,8 @@ const myModules = [
     MatButtonModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
 ];
 
 @NgModule({

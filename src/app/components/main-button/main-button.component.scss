@@ -1,0 +1,34 @@
+
+
+.button-data{
+  width: 175px;
+  height: 145px;
+  padding: 5%;
+}
+
+.main-btn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #124d8f;
+  border-radius: 10px;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.titulo{
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image{
+  position: absolute;
+  width: 72%;
+  bottom: -2.5%;
+}
+

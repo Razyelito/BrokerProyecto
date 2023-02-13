@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+    <app-navbar></app-navbar>
+</ion-header>
+
+<app-searchbar class="searchbar"></app-searchbar>
+
+<ion-content>
+
+  <div class="texto">Planes</div>
+
+  <div class="planes">
+
+    <app-plan-card
+    fecha_inicio="10/01/2022"
+    fecha_final="12/12/2022"
+    urlImgBackg="./assets/img/hogar.png"
+    urlImgLogo="./assets/img/mapfreSeguros.png"
+    tipoSeguro="Hogar Total"
+    precio_pre="55"
+    precio_pos="35"
+    cobertura1="Incendios"
+    cobertura2="Robos"
+    cobertura3="Daños Colaterales"
+    >
+    </app-plan-card>
+
+  </div>
+  
+
+
+<app-footer></app-footer>
+
+</ion-content>

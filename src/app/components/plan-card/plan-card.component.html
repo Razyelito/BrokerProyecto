@@ -1,20 +1,58 @@
-
-<!-- tarjeta de plan-->
 <div class="planCard">
-    <button class="button-container">
-        <!-- contenedor de elementos de la tarjeta de plan-->
-        <div class="card-container">
-                <!-- parte izquierda-->
-                <div class="text-container">
-                    <h2 class="titulo">{{titulo}}</h2>
-                    <p class="texto">
-                        {{descripcion}}
-                    </p>
-                </div>
-                <!-- parte derecha-->
-                <div class="image-container">
-                    <img class="image" [src]="urlImgBackg" alt="image">
-                </div>
-            </div> 
-    </button>
+
+  <div class="container">
+
+    <!--Contenedor de la fecha del Plan -->
+    <div class="fecha">
+      <div class="fechaD">Desde: {{fecha_inicio}}</div>
+      <span class="spacer"></span>
+      <div class="fechaH">Hasta: {{fecha_final}}</div>
+      <span class="spacer"></span>
+  </div>
+
+  <!--Contenedor de la imagen y precio del pan -->
+  <div class="cuerpo">
+      <!-- contenedor para imagen y tipo de plan-->
+      <div class="izquierda">
+            <img class="imagenBack" [src]="urlImgBackg" alt="imagebackground">
+            <p class="tipo">{{tipoSeguro}}</p>
+      </div>
+      <!-- contenedor para logo y precio de seguro-->
+      <div class="derecha">
+          <div class="derechaImagen">
+            <img class="imagenLogo" [src]="urlImgLogo" alt="imagelogo">
+          </div>
+          <div class="derechaPrecios">
+            <div class="derechaPreciosTexto">
+                <p class="antes">ANTES:</p>
+                <p class="despues">DESPUES:</p> 
+            </div>
+            <div class="derechaPreciosValores">
+                <div class="valoresI" >$<div class="pre">{{precio_pre}}</div></div>
+                <div class="valoresD" >$<div class="pos">{{precio_pos}}</div></div>
+            </div>
+          </div>
+      </div>
+
+  </div>
+
+  <!--Contenedor de la cobertura de la promocion -->
+  <div class="cobertura">
+    <ul class="lista">
+        <li>{{cobertura1}}</li>
+        <li>{{cobertura2}}</li>
+        <li>{{cobertura3}}</li>
+      </ul>      
+  </div>
+
+  <!--Contenedor de los iconos -->
+  <div class="buttons">
+        <button class="buttonImg" > <img src="./assets/img/me-gusta.png" alt=""></button>
+        <button class="btn_estilo" routerLink="/contactus">Contacto</button>
+        <button class="buttonImg" > <img src="./assets/img/compartir.png" alt=""></button>
+        
+  </div>
+
+  </div>
+  
 </div>

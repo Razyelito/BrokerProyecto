@@ -1,28 +1,26 @@
 <div class="footer">
 
-    <mat-toolbar class="bar">
+  <mat-toolbar class="bar">
 
-        <span class="spacer"></span>
 
-        <button routerLink="/main/client" mat-icon-button class="icon favorite-icon" aria-label="home icon">
-          <img src="./assets/img/inicio.png" alt="">
-        </button>
+      <button routerLink="/main/client" mat-icon-button class="icon favorite-icon" aria-label="home icon" (click)="go_to_main()">
+        <img class="icon" src="./assets/img/inicio.png" alt="">
+      </button>
 
-        <span class="spacer"></span>
+      <span class="spacer"></span>
 
-        <button routerLink="/cuenta" mat-icon-button class="icon favorite-icon" aria-label="acoount icon">
-          <img src="./assets/img/perfil.png" alt="">
-        </button>
+      <button routerLink="/cuenta" mat-icon-button class="icon favorite-icon" aria-label="acoount icon" (click)="go_to_cuenta()">
+        <img class="icon" src="./assets/img/perfil.png" alt="">
+      </button>
 
-        <span class="spacer"></span>
-        
-        <button routerLink="/login" mat-icon-button class="icon favorite-icon" aria-label="tips icon">
-          <img src="./assets/img/tips.png" alt="">
-        </button>
+      <span class="spacer"></span>
+      
+      <button routerLink="/login" mat-icon-button class="icon favorite-icon" aria-label="tips icon" (click)="go_to_tip()">
+        <img class="icon" src="./assets/img/tips.png" alt="">
+      </button>
 
-        <span class="spacer"></span>
-        
-  
-    </mat-toolbar>
+      
+
+  </mat-toolbar>
 
 </div>

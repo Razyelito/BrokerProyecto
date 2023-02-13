@@ -1,0 +1,74 @@
+
+.imagen{
+    background-color: white;
+    height: 7.5vh;
+    width: 55vw;
+}
+
+.flechaD, .flechaI{
+    width: 10%;
+    height: 60%;
+}
+
+.flechaD{
+    transform: scale(-1);
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 35s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-55vw * 3))}
+}
+
+// Styling
+.slider {
+	background: #c5c7c7;
+	height: 9vh;
+    width: 100%;
+	margin: auto;
+	overflow:hidden;
+	position: relative;	
+	
+	&::before,
+	&::after {
+        @include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 50px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(55vw * 6);
+        height: 9vh;
+        align-items: center;
+	}
+	
+	.slide {
+		height: 8vh;
+		width: 55vw;
+        display: flex;
+        align-items: center;
+        //margin-left: 1%;
+	}
+}

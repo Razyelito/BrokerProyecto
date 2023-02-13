@@ -1,0 +1,74 @@
+
+
+
+.presentacion{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.tipo{
+    position: absolute;
+    top: 5%;
+}
+
+.tipo, .nombre{
+    font-weight: bold;
+    color: #2e295a;
+    font-size: larger;
+}
+
+.presentacion, .imagencontenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen{
+    width: 40%;
+}
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.texto{
+    color: #004c8f;
+    margin-left: 9%;
+    font-weight: 800;
+    font-size: small;
+}
+
+.userdata{
+    width: 40%;
+    border: none;
+    padding: 8px 1%;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #85d0f4;
+    border-radius: 100px;
+    box-sizing: border-box;
+    margin-right: 9%;
+    font-size: 2vw;
+    text-align: center;
+    color: #85d0f4;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.boton{
+    background-color: #114c90;
+    color: white;
+    border-radius: 20px;
+    width: 130px;
+    height: 25px;
+}

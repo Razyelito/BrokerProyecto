@@ -1,0 +1,57 @@
+<ion-header>
+  <app-navbar class="navbar"></app-navbar>
+</ion-header>
+
+<app-searchbar class="searchbar"></app-searchbar>
+
+<ion-content>
+  <div class="contenedor" *ngFor="let broker of lista_brokers;">
+    <div class="texto">Contacto del Broker</div>
+
+    <div class="imagenContenedor">
+      <img src="./assets/img/usuario.png" alt="" />
+      <img class="sms" src="./assets/img/mensajes.png" alt="" />
+    </div>
+
+    <div class="telefonoFecha">
+      <div class="telefono">
+        <img class="icon" src="./assets/img/contactos2.png" alt="" />
+        <div class="texto2">{{broker['telefono']}}</div>
+      </div>
+
+      <div class="fecha">
+        <img class="icon" src="./assets/img/calendario2.png" alt="" />
+        <div class="texto2">{{broker['horario_atencion']}}</div>
+      </div>
+    </div>
+
+    <div class="correo">
+      <img class="icon" src="./assets/img/mensaje.png" alt="" />
+      <span class="spacer"></span>
+      <div class="texto2">{{broker['correo']}}</div>
+    </div>
+
+    <div class="mapa">
+      <iframe
+        [src]="getUrl(broker.ubicacion)"
+        width="300"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="redesSociales">
+      <div class="textoRedes">Redes Sociales</div>
+      <div class="iconos">
+        <ion-icon class="redes" name="logo-facebook" size="medium"></ion-icon>
+        <ion-icon class="redes" name="logo-instagram" size="medium"></ion-icon>
+        <ion-icon class="redes" name="logo-twitter" size="medium"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

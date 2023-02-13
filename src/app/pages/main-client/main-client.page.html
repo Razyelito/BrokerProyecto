@@ -1,0 +1,79 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<ion-content>
+  <app-publicidad></app-publicidad>
+
+  <div class="main">
+    <div class="row">
+      <div class="derecha">
+        <div class="button D">
+          <app-main-button
+            title="Mis Planes"
+            urlImg="./assets/img/plan.png"
+            (click)="nave_to_misplanes()"
+          >
+          </app-main-button>
+        </div>
+
+        <div class="button D">
+          <app-main-button
+            title="Centros Médicos"
+            urlImg="./assets/img/centros-medicos.png"
+            (click)="nave_to_centrosMedicos()"
+          >
+          </app-main-button>
+        </div>
+
+        <div class="button D">
+          <app-main-button
+            title="Pagos"
+            urlImg="./assets/img/pagos.png"
+            router_link="/"
+          >
+          </app-main-button>
+        </div>
+
+        <div class="button hidden">
+          <app-main-button
+            title="hidden"
+            urlImg="./assets/img/comentarios.png"
+            router_link="/"
+          >
+          </app-main-button>
+        </div>
+      </div>
+
+      <div class="izquierda">
+        <div class="button I">
+          <app-main-button
+            title="Reembolsos"
+            urlImg="./assets/img/reembolsos.png"
+            (click)="nave_to_reembolsos()"
+          >
+          </app-main-button>
+        </div>
+
+        <div class="button I">
+          <app-main-button
+            title="Eventos Médicos"
+            urlImg="./assets/img/eventos-medicos.png"
+            (click)="nave_to_eventosMedicos()"
+          >
+          </app-main-button>
+        </div>
+
+        <div class="button I">
+          <app-main-button
+            title="Ofertas"
+            urlImg="./assets/img/ofertas.png"
+            (click)="nave_to_ofertas()"
+          >
+          </app-main-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ion-content>

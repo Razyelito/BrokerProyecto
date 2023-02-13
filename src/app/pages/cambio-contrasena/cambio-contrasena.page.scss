@@ -1,0 +1,49 @@
+.userdata{
+    width: 65%;
+    border: none;
+    padding: 10px 10%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #85d0f4;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.userdata::placeholder{
+    font-size: small;
+    color: #85d0f4;
+    text-align: center;
+}
+
+.submit-button{
+    border-radius: 90px;
+    background-color:  #1a5794;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    justify-content: center;
+    color: white;
+}
+
+.imagenUsuario{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenicon{
+    width: 30%;
+}
+
+.formulario, .botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto{
+    text-align: center;
+    color: #047ca5;
+}

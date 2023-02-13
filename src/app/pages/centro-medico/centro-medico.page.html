@@ -1,0 +1,42 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<app-searchbar class="searchbar"></app-searchbar>
+<ion-content>
+  <div class="titulo">Centro Medico</div>
+
+  <div class="dato tipo">
+    <div class="texto">Tipo:</div>
+    <div class="contenido">{{centro_medico.tipo}}</div>
+  </div>
+
+  <div class="dato ubicacion">
+    <div class="texto">Ubicación:</div>
+
+    <iframe
+      class="mapa"
+      [src]="getUrl()"
+      width="200"
+      height="200"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  <div class="dato dirreccion">
+    <div class="texto">Dirección:</div>
+    <div class="contenido">{{centro_medico.direccion}}</div>
+  </div>
+
+  <div class="dato2 detalle">
+    <div class="texto">Detalle:</div>
+    <div class="contenido">{{centro_medico.detalle}}</div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <app-footer></app-footer>
+</ion-content>

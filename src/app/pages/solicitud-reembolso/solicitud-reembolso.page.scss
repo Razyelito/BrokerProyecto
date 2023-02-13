@@ -1,0 +1,82 @@
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    margin-top: 7%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 6vw;
+    color: #114c90;
+}
+
+.imagenseguro{
+    height: 8vh;
+    text-align: center;
+    margin-top: 5%
+}
+
+.img{
+    width: 50%;
+}
+
+.texto{
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #004c8f;
+}
+
+.texto2{
+    text-align: center;
+    margin-top: 20%;
+    color: #b0b0b0
+}
+
+.contenedorfile{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoformulario{
+    margin-top: 7%;
+    text-decoration: none;
+}
+
+.iconformulario{
+    width: 30%;
+}
+
+.texto3{
+    margin-top: 3%;
+    color: #004c8f;
+    position: relative;
+    left: 5%;
+}
+
+.archivo{
+    margin-top: 2%;
+    position: relative;
+    left: 5%;
+}
+
+.boton{
+    border-radius: 90px;
+    background-color:  #1a5794;
+    width: 35vw;
+    height: 3vh;
+    border: none;
+    justify-content: center;
+    color: white;
+    font-size: 4vw;
+    margin-top: 8%;
+    position: relative;
+    left: 5%;
+}

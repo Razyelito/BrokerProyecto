@@ -1,0 +1,70 @@
+.searchbar{
+    height: 6.5%;
+    display: flex;
+}
+
+.titulo{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texto{
+    color: #114c90;
+    font-weight: bold;
+    font-size: 8vw;
+    position: absolute;
+    left: 9%;
+}
+
+.imagen1{
+    width: 28%;
+    position: absolute;
+    left: 29%;
+}
+
+.imagen2{
+    width: 32%;
+    position: absolute;
+    left: 57%;
+}
+
+.label{
+    color: #114c90;
+    position: relative;
+    left: 5%;
+    margin-bottom: 2%;
+}
+
+.textarea{
+    width: 90%;
+    height: 25vh;
+    background-color: rgb(243, 243, 236);
+    border: none;
+    margin-top: 1%;
+}
+
+.imagen{    
+}
+
+.data{
+}
+
+.form{
+    text-align: center;
+}
+
+.button{
+    border-radius: 90px;
+    background-color:  #1a5794;
+    width: 58vw;
+    height: 5vh;
+    border: none;
+    justify-content: center;
+    color: white;
+    font-size: 5vw;
+    margin-top: 5%;
+}

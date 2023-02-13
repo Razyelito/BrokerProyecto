@@ -1,0 +1,21 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+<app-publicidad></app-publicidad>
+<app-searchbar class="searchbar"></app-searchbar>
+<ion-content>
+  <div class="texto">Mis Planes</div>
+
+  <div class="contenedor_principal">
+    <app-misplanes-card
+      *ngFor="let plan of mis_planes"
+      (click)="nave_to_miplan(plan)"
+      titulo="{{plan[0]['nombreplan']}}"
+      detalle="{{plan[0]['detalle']}}"
+      urlImg="{{plan[0]['imagen']}}"
+    ></app-misplanes-card>
+  </div>
+
+  <button class="boton agregar" (click)="abrir_modal_comentario()"></button>
+  <app-footer></app-footer>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <app-navbar class="navbar"></app-navbar>
+</ion-header>
+<div class="titulo">Centros Médicos Afiliados</div>
+<app-searchbar class="searchbar"></app-searchbar>
+<ion-content>
+  <div class="contenedor">
+    <app-centros-card
+      *ngFor="let centro_medico of lista_centros_medicos"
+      nombre="{{centro_medico['nombre']}}"
+      direccion="{{centro_medico['direccion']}}"
+      logo="{{centro_medico['logo']}}"
+      (click)="nave_to_centroMedico(centro_medico)"
+    ></app-centros-card>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

@@ -1,0 +1,59 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="contenedor">
+    <div class="presentacion">
+      <div class="tipo">Tipo de Plan</div>
+      <div class="imagencontenedor">
+        <img class="imagen" src="./assets/img/seguro-de-vida.png" alt="" />
+      </div>
+      <div class="nombre">{{user}}</div>
+    </div>
+
+    <div class="especificaciones">
+      <div class="tipodeseguro box">
+        <div class="texto">Tipo de Seguro:</div>
+        <div class="userdata">{{miplan.tipodeseguro}}</div>
+      </div>
+
+      <div class="compania box">
+        <div class="texto">Compañía:</div>
+        <div class="userdata">{{miplan.nombreCompania}}</div>
+      </div>
+
+      <div class="tipodeplan box">
+        <div class="texto">Tipo de Plan:</div>
+        <div class="userdata">{{miplan.nombreplan}}</div>
+      </div>
+
+      <div class="plan box">
+        <div class="texto">Plan:</div>
+        <div class="userdata">{{miplan.nombreplan}}</div>
+      </div>
+
+      <div class="codigo box">
+        <div class="texto">Código de Contrato:</div>
+        <div class="userdata">{{miplan.codigoContrato}}</div>
+      </div>
+
+      <div class="agente box">
+        <div class="texto">Agente Asignado:</div>
+        <div class="userdata">{{miplan.agente}}</div>
+      </div>
+
+      <div class="fecha box">
+        <div class="texto">Fecha de Ingreso:</div>
+        <div class="userdata">{{miplan.fechafirmacontrato}}</div>
+      </div>
+    </div>
+
+    <div class="botones">
+      <button class="boton pagar">Pagar Plan</button>
+      <button class="boton historial">Ver Historial</button>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

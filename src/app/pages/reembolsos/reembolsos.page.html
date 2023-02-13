@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <app-navbar></app-navbar>
+</ion-header>
+
+<app-searchbar class="searchbar"></app-searchbar>
+
+<ion-content>
+  <div class="texto">Reembolsos</div>
+
+  <div class="contenedor">
+    <app-reembolso-card
+      (click)="nave_to_solicitud()"
+      urlImgSeguro="./assets/img/latinaSeguros.png"
+      descripcion="Este formulario debe ser llenado para su solicitud de reembolso de su seguro de vida"
+    ></app-reembolso-card>
+    <app-reembolso-card
+      (click)="nave_to_solicitud()"
+      urlImgSeguro="./assets/img/latinaSeguros.png"
+      descripcion="Este formulario debe ser llenado para su solicitud de reembolso de su seguro de vida"
+    ></app-reembolso-card>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

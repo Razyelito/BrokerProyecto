@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+   server: 'http://localhost:8000/movil/api',
+   //server: 'https://medicalbrokers.pythonanywhere.com/movil/api',
+   server2: 'https://medicalbrokers.pythonanywhere.com/crm/api'
+  //server: 'https://backendbrokerapi.herokuapp.com/crm/api'
+  //server: 'https://dennyssoft2023.pythonanywhere.com/crm/api'
 };
 
 /*

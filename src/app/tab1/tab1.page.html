@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <app-navbar class="navbar"></app-navbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-publicidad></app-publicidad>
+
+  <!-- Titulo -->
+  <div class="title-container principal">
+    <img src="./assets/img/01.png" alt="" />
+    <div>Aseguradoras</div>
+  </div>
+
+  <!-- Carrusel de los logos de las aseguradores pertenecientes al broker-->
+  <app-carrusel class="carrusel"></app-carrusel>
+  <!-- Botones del landing para acceder-->
+  <div class="btns-container">
+    <app-landing-btn
+      class="landing-btn"
+      title="Ver Ofertas de seguros disponibles"
+      urlImg="./assets/img/ofertas.png"
+      router_link="/ofertas"
+    ></app-landing-btn>
+    <app-landing-btn
+      class="landing-btn"
+      title="Cotizar Plan"
+      urlImg="./assets/img/plan.png"
+      router_link="/cotizador"
+    ></app-landing-btn>
+    <app-landing-btn
+      class="landing-btn"
+      title="Contacto"
+      urlImg="./assets/img/contacto.png"
+      router_link="/contactus"
+    ></app-landing-btn>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

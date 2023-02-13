@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <app-navbar class="navbar"></app-navbar>
+</ion-header>
+<app-publicidad></app-publicidad>
+<app-searchbar class="searchbar"></app-searchbar>
+
+<ion-content>
+  <div class="texto">Tips</div>
+
+  <div class="contenedor">
+    <app-tip-card
+      fecha_inicio="01/01/2022"
+      fecha_final="12/12/2022"
+      urlImgBackg="./assets/img/seguro-de-auto.png"
+      Descripcion="Cuando manejes no debes usar tus dispositivomovil"
+    ></app-tip-card>
+
+    <app-tip-card
+      fecha_inicio="01/01/2022"
+      fecha_final="12/12/2022"
+      urlImgBackg="./assets/img/seguro-de-auto.png"
+      Descripcion="Cuando manejes no debes usar tus dispositivomovil"
+    ></app-tip-card>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

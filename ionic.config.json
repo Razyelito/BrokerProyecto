@@ -1,0 +1,7 @@
+{
+  "name": "BrokerAppMobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

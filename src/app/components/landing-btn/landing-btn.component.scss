@@ -1,0 +1,51 @@
+.btn{
+    background-color: #004c8f;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    height: 85px;
+    margin-top: 3%;
+}
+
+.btn-data{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title{
+    position: absolute;
+    color: white;
+    width: 40%;
+    left: 5%;
+    font-size: small;
+    font-weight: bold;
+}
+
+.bar{
+    position: absolute;
+    border: 1% solid rgb(255, 255, 255);
+    width: 1%;
+    height: 70%;
+    background-color: white;
+    left: 50%;
+}
+
+.image{
+    position: relative;
+    width: 30%;
+    right: -25%;
+}
+
+.imagen{
+    object-fit: cover;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }

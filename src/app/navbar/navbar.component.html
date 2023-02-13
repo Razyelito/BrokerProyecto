@@ -1,16 +1,80 @@
 <div class="nav-container">
-    <mat-toolbar class="bar">
-      <button mat-icon-button >
-        <mat-icon class="icon">chevron_left</mat-icon>
+  <mat-toolbar class="bar">
+    <input class="checkbox" type="checkbox" name="" id="" />
+
+    <button class="menu">
+      <img class="icon" src="./assets/img/menu.png" alt="" />
+    </button>
+
+    <div class="sideMenu">
+      <!-- boton de iniciar sesion -->
+
+      <button class="navbutton" (click)="ir_a_login()" *ngIf="!login">
+        <img class="iconboton abrir" src="./assets/img/sesion.png" alt="" />
+        <div class="textoboton">Iniciar sesión</div>
       </button>
-      <span class="spacer"></span>
-      <img class="logo" src="./assets/img/logo-noboa.png" alt="">
-      <span class="spacer"></span>
-      <button routerLink="/login" mat-icon-button class="example-icon favorite-icon" aria-label=" icon-button with heart icon">
+
+      <!-- boton de tarjeta de afiliacion  -->
+      <button
+        class="navbutton"
+        (click)="nave_to_tarjetaAfilicion()"
+        *ngIf="login"
+      >
+        <img class="iconboton" src="./assets/img/tarjetas.png" alt="" />
+        <div class="textoboton">Tarjeta de Afiliación</div>
+      </button>
+
+      <!-- boton de comentarios-->
+      <button class="navbutton" (click)="nave_to_sugerencias()" *ngIf="login">
+        <img class="iconboton" src="./assets/img/comentarios.png" alt="" />
+        <div class="textoboton">Sugerencias</div>
+      </button>
+
+      <!-- boton de contacto-->
+      <button class="navbutton" (click)="nave_to_contacto()" *ngIf="login">
+        <img class="iconboton" src="./assets/img/contactos.png" alt="" />
+        <div class="textoboton">Contacto</div>
+      </button>
+
+      <!-- boton de cerrar sesrion-->
+      <button class="navbutton" (click)="cerrar_sesion()" *ngIf="login">
+        <img class="iconboton cerrar" src="./assets/img/sesion.png" alt="" />
+        <div class="textoboton">Cerrar sesión</div>
+      </button>
+    </div>
+
+    <button class="back">
+      <img
+        class="icon"
+        src="./assets/img/arrow.png"
+        alt=""
+        onclick="history.back()"
+      />
+    </button>
+
+    <img class="logo" src="./assets/img/logo-noboa.png" alt="" />
+
+    <button class="campana">
+      <img class="icon" src="./assets/img/bell.png" alt="" />
+    </button>
+
+    <div *ngIf="login; else elseBlock">
+      <!--<p class="usuario" trigger="top" (click)="alerta_cerrar()">Bienvenido {{usuario}}</p>
+      <ion-popover #popover [isOpen]="isOpen" (didDismiss)="isOpen = false">
+      <ion-popover trigger="top-center" side="bottom" alignment="center">
+        <ng-template >
+          <p style="text-align: center; width: 80%" (click)="cerrar_sesion()">Cerrar sesion </p>
+          
+        </ng-template>
+      </ion-popover> -->
+    </div>
+
+    <ng-template #elseBlock>
+      <!-- <button routerLink="/login" mat-icon-button class="example-icon favorite-icon"
+        aria-label=" icon-button with heart icon">
         <mat-icon class="icon">account_circle</mat-icon>
-      </button>
-      
-
-    </mat-toolbar>
-
-  </div>
+      </button> 
+      <p style="color: white" (click)=ir_a_login()>Iniciar Sesion</p>-->
+    </ng-template>
+  </mat-toolbar>
+</div>

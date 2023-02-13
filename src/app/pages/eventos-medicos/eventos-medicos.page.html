@@ -1,0 +1,57 @@
+<ion-header>
+  <app-navbar class="navbar"></app-navbar>
+</ion-header>
+<app-searchbar class="searchbar"></app-searchbar>
+<ion-content>
+  <div class="contenedor">
+    <div class="texto">Eventos Médicos</div>
+
+    <div class="texto2">user-name</div>
+
+    <app-eventos-card
+      numero="123456"
+      fecha="12/12/2022"
+      titulo="Cirugia"
+      descripcion="Operacion de rodilla por cartilago desgastado"
+      (click)="nave_to_event()"
+    ></app-eventos-card>
+
+    <app-eventos-card
+      numero="123457"
+      fecha="01/01/2022"
+      titulo="Cirugia"
+      descripcion="Apendicitis"
+      (click)="nave_to_event()"
+    ></app-eventos-card>
+    <app-eventos-card
+      numero="123457"
+      fecha="01/01/2022"
+      titulo="Cirugia"
+      descripcion="Apendicitis"
+      (click)="nave_to_event()"
+    ></app-eventos-card>
+    <app-eventos-card
+      numero="123457"
+      fecha="01/01/2022"
+      titulo="Cirugia"
+      descripcion="Apendicitis"
+      (click)="nave_to_event()"
+    ></app-eventos-card>
+    <app-eventos-card
+      numero="123457"
+      fecha="01/01/2022"
+      titulo="Cirugia"
+      descripcion="Apendicitis"
+      (click)="nave_to_event()"
+    ></app-eventos-card>
+    <app-eventos-card
+      numero="123457"
+      fecha="01/01/2022"
+      titulo="Cirugia"
+      descripcion="Apendicitis"
+      (click)="nave_to_event()"
+    ></app-eventos-card>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

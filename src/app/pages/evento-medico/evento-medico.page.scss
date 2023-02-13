@@ -1,0 +1,104 @@
+.searchbar{
+    height: 6.5%;
+    display: flex;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #114c90;
+    margin-top: 7%;
+}
+
+.datos{
+    margin-top: 6%;
+}
+
+.texto1{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.texto2{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.texto{
+    color: #114c90;
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.container{
+    margin: 0% 6% 6.5% 6%;
+    color: #114c90;
+}
+
+.tipo{
+    display: flex;    
+}
+
+.info1{
+    font-size: 3vw;
+    text-align: center;
+    margin-left: 32%;
+}
+
+.fecha{
+    display: flex;
+}
+
+.info2{
+    width: 15%;
+    margin-left: 27%;
+}
+
+.plan{
+    display: flex;
+}
+
+.info3{
+    font-size: 3vw;
+    margin-left: 15%;
+}
+
+.lugar{
+    display: flex;
+}
+
+.info4{
+    font-size: 3vw;
+    margin-left: 5%;
+}
+
+.info5{
+    font-size: 3vw;
+    margin-left: 5%;
+}
+
+.pago{
+    display: flex;
+}
+
+.info6{
+    font-size: 3vw;
+    margin-left: 5%;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.archivos{
+    width: 45%;
+    height: 40px;
+    background-color: rgb(136, 136, 136);
+    color: white;
+}

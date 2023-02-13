@@ -1,0 +1,54 @@
+
+.afiliacion-card{
+    width: 100%;
+    display: flex;
+}
+
+.contenedor{
+    background-color: #cdd0cf;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
+
+#contenedor_principal{
+    margin-bottom: 40%;
+}
+
+.tipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.texto{
+    color: #004c8f;
+    font-weight: bold;
+}
+
+.numero{
+    margin-top: 2%;
+}
+.userdata{
+    color: #004c8f;
+}
+
+.userinfo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.derecha, .izquierda{
+    display: flex;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}

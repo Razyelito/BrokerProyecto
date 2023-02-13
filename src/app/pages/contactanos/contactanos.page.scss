@@ -1,0 +1,107 @@
+
+.searchbar{
+    height: 6.5%;
+    display: flex;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto{
+    width: 100%;
+    font-weight: bold;
+    font-size: 5vw;
+    margin-top: 5%;
+    text-align: center;
+    color: #114c90;
+}
+
+.texto2{
+    width: 100%;
+    font-size: 3.5vw;
+    color: #114c90;
+}
+
+.imagenContenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26%;
+    height: auto;
+    position: relative;
+}
+
+.sms{
+    position: absolute;
+    width: 40%;
+    left: 60%;
+    bottom: 10%;
+}
+
+.telefonoFecha{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon{
+    width: 9vw;
+    height: auto;
+}
+
+.telefono, .fecha, .correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.correo{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mapa{
+    margin-top: 5%;
+}
+
+.redesSociales{
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos{
+    margin-top: 4.5%;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.textoRedes{
+    color: #004c8f;
+    font-weight: bold;
+}
+.redes{
+    color: #047ca5;
+}
+
+.spacer{
+    margin-right: 2%;
+}
+
+ion-icon {
+    font-size: 32px;
+  }

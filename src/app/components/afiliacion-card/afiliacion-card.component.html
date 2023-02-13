@@ -1,0 +1,40 @@
+<div id="contenedor_principal">
+  <div
+    class="afiliacion-card"
+    *ngFor="let tarjeta of lista_tarjetas"
+    style="margin-bottom: 5%"
+  >
+    <div class="contenedor">
+      <div class="tipo">
+        <div class="titulo texto">{{ tarjeta.nombre_plan }}</div>
+        <div class="numero userdata">{{ tarjeta.codigo_tarjeta }}</div>
+      </div>
+      <div class="userinfo">
+        <div class="derecha">
+          <div class="texto">Nombre:</div>
+
+          <div class="nombre userdata">{{ tarjeta.nombres }}</div>
+        </div>
+        <div class="izquierda">
+          <div class="texto">Apellidos:</div>
+          <div class="apellidos userdata">{{ tarjeta.apellidos }}</div>
+        </div>
+      </div>
+      <div class="qrimg">
+        <p style="text-align: center">
+          <ngx-qrcode
+            [elementType]="elementType"
+            value="Tus datos son: {{ tarjeta.nombres }} {{
+              tarjeta.apellidos
+            }} {{ tarjeta.nombre_plan }} {{ tarjeta.tipo_plan }}"
+          >
+          </ngx-qrcode>
+        </p>
+      </div>
+      <div class="center">
+        <div class="texto">Fecha expiracion:</div>
+        <div class="nombre userdata">{{ tarjeta.fecha_expiracion }}</div>
+      </div>
+    </div>
+  </div>
+</div>

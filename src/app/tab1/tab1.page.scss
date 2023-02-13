@@ -1,0 +1,41 @@
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*Titulo*/
+
+.title-container{
+    height: 5%;
+    margin: 0.5rem 0 0.4rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.title-container img{
+    height: 90%;
+    width: auto;
+    margin-left: 2%;
+}
+
+/*Carussel*/
+
+.carrusel{
+}
+
+/*Botones*/
+
+.btns-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-btn{
+}
+

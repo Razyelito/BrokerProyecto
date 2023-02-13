@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <app-navbar></app-navbar>
+</ion-header>
+
+<app-searchbar class="searchbar"></app-searchbar>
+
+<ion-content>
+  <div class="texto">Ofertas</div>
+
+  <div class="ofertas">
+    <div
+      *ngFor="let elemento of lista_ofertas"
+      style="
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+      "
+    >
+      <app-oferta-card
+        idSeguro="{{elemento['id']}}"
+        fecha_inicio="{{elemento['fecha_desde']}}"
+        fecha_final="{{elemento['fecha_hasta']}}"
+        urlImgBackg="./assets/img/seguro-de-auto.png"
+        tipoSeguro="{{elemento['nombrePlan']}}"
+        urlImgLogo="./assets/img/latinaSeguros.png"
+        precio_pre="{{elemento['precio_antes']}}"
+        precio_pos="{{elemento['precio_despues']}}"
+        cobertura1="{{elemento['cobertura1']}}"
+        cobertura2="{{elemento['cobertura2']}}"
+        cobertura3="{{elemento['cobertura3']}}"
+      >
+      </app-oferta-card>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

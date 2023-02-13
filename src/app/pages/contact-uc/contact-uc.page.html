@@ -1,0 +1,122 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="main">
+    <mat-card class="container">
+      <div class="formulario" action="/" [formGroup]="contactoForm">
+        <div class="texto">
+          Para una mejor comunicación, por favor ingrese sus datos y nos
+          contactaremos con usted
+        </div>
+
+        <div class="info">
+          <h1 style="text-align: center">{{nombreSeguro}}</h1>
+          <div class="userdata-container">
+            <input
+              class="userdata"
+              type="text"
+              placeholder="Nombres"
+              formControlName="nombres"
+            />
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('nombres')?.hasError('required')"
+            >
+              Nombre es requerido
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('nombres')?.hasError('pattern')"
+            >
+              Solo se permiten letras
+            </ion-text>
+          </div>
+
+          <div class="userdata-container">
+            <input
+              class="userdata"
+              type="text"
+              placeholder="Apellidos"
+              formControlName="apellidos"
+            />
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('apellidos')?.hasError('required')"
+            >
+              Apellido es requerido
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('apellidos')?.hasError('pattern')"
+            >
+              Solo se permiten letras
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('nombre')?.hasError('pattern')"
+            >
+              Solo se permiten letras
+            </ion-text>
+          </div>
+
+          <div class="userdata-container">
+            <input
+              class="userdata"
+              type="email"
+              placeholder="Correo"
+              formControlName="correo"
+            />
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('correo')?.hasError('required')"
+            >
+              El correo electrónico es requerido
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('correo')?.hasError('pattern')"
+            >
+              El correo electrónico es inválido
+            </ion-text>
+          </div>
+
+          <div class="userdata-container">
+            <input
+              class="userdata"
+              type="tel"
+              pattern="[0-9]{10}"
+              placeholder="Numero Celular"
+              formControlName="celular"
+              required
+            />
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('celular')?.hasError('required')"
+            >
+              Celular es requerido
+            </ion-text>
+            <ion-text
+              color="danger"
+              *ngIf="contactoForm.get('celular')?.hasError('pattern')"
+            >
+              Celular inválido
+            </ion-text>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button
+            class="submit-button"
+            type="submit"
+            [disabled]="contactoForm.invalid"
+            (click)="registrar_solicitud()"
+          >
+            Enviar Datos
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</ion-content>

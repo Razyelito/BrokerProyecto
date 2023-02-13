@@ -1,0 +1,65 @@
+.searchbar{
+    height: 6.5%;
+    display: flex;
+}
+
+.titulo{
+    width: 100%;
+    font-weight: bolder;
+    font-size: 5.5vw;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    color: #114c90;
+}
+
+.dato{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 6%;
+}
+
+.dato2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-right: 6%;
+}
+
+.texto{
+    font-weight: bolder;
+    font-size: 4vw;
+    color: #114c90;
+    margin-top: 7%;
+}
+
+.mapa{
+    margin-top: 7%;
+}
+
+.contenido{
+    font-size: 3.5vw;
+    color: #114c90;
+    margin-top: 7%;
+}
+
+.tipo .contenido{
+    margin-left: 35%;
+}
+
+.ubicacion .mapa{
+    margin-left: 5%;
+}
+
+.dirreccion .contenido{
+    margin-left: 10%;
+}
+
+.dato2 .contenido{
+    margin-top: 4%;
+}
+
+.spacer{
+    height: 150px;
+}

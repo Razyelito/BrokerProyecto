@@ -1,0 +1,54 @@
+
+.misplanes-card{
+    height: 115px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.contenedor{
+    background-color: #114c90;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    display: flex;
+}
+
+.texto{
+    width: 50%;
+    color: white;
+}
+
+.imagencontenedor{
+    width: 50%;
+    position: relative;
+}
+
+.imagen{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+
+}
+
+.titulo, .detalle{
+    margin-left: 8%;
+}
+
+.titulo{
+    font-weight: bold;
+    height: 10%;
+    padding-top: 10%;
+}
+
+.detalle{
+    height: 75%;
+    font-size: small;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 14%;
+}

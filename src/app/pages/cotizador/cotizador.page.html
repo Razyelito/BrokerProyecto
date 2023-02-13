@@ -1,0 +1,161 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="cotizador-container">
+    <!-- <div class="form" [formGroup]="contactoForm"> -->
+    <form class="form" [formGroup]="contactoForm">
+      <div class="titulo">
+        <h2>Solicitar Cotizacion</h2>
+        <p>Todos los campos son obligatorios</p>
+      </div>
+
+      <div class="userdata-container">
+        <input
+          class="userdata"
+          type="text"
+          placeholder="Nombres"
+          formControlName="nombre"
+        />
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('nombre')?.hasError('required')"
+        >
+          Nombre es requerido
+        </ion-text>
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('nombre')?.hasError('pattern')"
+        >
+          Solo se permiten letras
+        </ion-text>
+      </div>
+
+      <div class="userdata-container">
+        <input
+          class="userdata"
+          type="email"
+          placeholder="Correo"
+          formControlName="correo"
+        />
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('correo')?.hasError('required')"
+        >
+          El correo electrónico es requerido
+        </ion-text>
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('correo')?.hasError('pattern')"
+        >
+          El correo electrónico es inválido
+        </ion-text>
+      </div>
+
+      <div class="userdata-container">
+        <input
+          class="userdata"
+          type="tel"
+          pattern="[0-9]{10}"
+          placeholder="Numero Celular"
+          formControlName="numero"
+          required
+        />
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('numero')?.hasError('required')"
+        >
+          Celular es requerido
+        </ion-text>
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('numero')?.hasError('pattern')"
+        >
+          Celular inválido
+        </ion-text>
+      </div>
+
+      <div class="userdata-container">
+        <input
+          class="userdata"
+          type="number"
+          placeholder="Edad"
+          formControlName="edad"
+        />
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('edad')?.hasError('required')"
+        >
+          Edad es requerido
+        </ion-text>
+        <ion-text
+          color="danger"
+          *ngIf="contactoForm.get('edad')?.hasError('pattern')"
+        >
+          Edad inválida
+        </ion-text>
+      </div>
+
+      <div class="userdata-container">
+        <select class="genero" name="genero" formControlName="genero">
+          <option class="selectColor" value="" disabled selected hidden>
+            Genero
+          </option>
+          <option value="Hombre">Hombre</option>
+          <option value="Mujer">Mujer</option>
+          <option value="ninguno">Ninguno</option>
+        </select>
+      </div>
+
+      <div class="checkbox-container">
+        <input class="checker" type="checkbox" />
+        <span class="spacer"></span>
+        <p class="info">
+          Marque esta casilla si desea recibir otras ofertas por correo
+        </p>
+      </div>
+
+      <div class="button-container">
+        <button
+          type="submit"
+          class="submit-button"
+          [disabled]="contactoForm.invalid"
+          (click)="registrar_solicitud()"
+        >
+          Solicitar Cotizacion
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div *ngIf="ver_tabla">
+    <hr />
+    <table class="center tabla_datos">
+      <tr>
+        <th>Plan</th>
+        <th>Seguro</th>
+        <th>Cobertura</th>
+      </tr>
+      <tr *ngFor="let plan of lista_planes">
+        <td style="margin-right: 5%">{{plan.nombreplan}}</td>
+        <td>{{plan.tipodeseguro}}</td>
+        <td>{{plan.cobertura}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div
+    *ngIf="ver_mensaje"
+    style="
+      text-align: center;
+      margin-right: 5%;
+      margin-left: 5%;
+      margin-top: 5%;
+    "
+  >
+    <p>
+      Lo sentimos...pero no tenemos planes que se ajusten a los datos ingresado
+    </p>
+  </div>
+</ion-content>

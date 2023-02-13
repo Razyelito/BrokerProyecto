@@ -1,43 +1,53 @@
-<div class="ofertaCard">
+<div class="ofertaCard" (click)="nave_to_contactus()">
 
-    <!--Contenedor de la fecha de la oferta -->
-    <div class="fecha">
-        <div>Desde: {{fecha_inicio}}</div>
-        <div>Hasta: {{fecha_final}}</div>
-    </div>
+  <!--Contenedor de la fecha de la oferta -->
+  <div class="fecha">
+      <div class="fechaD">Desde: {{fecha_inicio}}</div>
+      <span class="spacer"></span>
+      <div class="fechaH">Hasta: {{fecha_final}}</div>
+      <span class="spacer"></span>
+  </div>
 
-    <!--Contenedor de la imagen y precio de la oferta -->
-    <div class="cuerpo">
-        <!-- contenedor para imagen y tipo de seguro-->
-        <div class="izquierda">
+  <!--Contenedor de la imagen y precio de la oferta -->
+  <div class="cuerpo">
+      <!-- contenedor para imagen y tipo de seguro-->
+      <div class="izquierda">
             <img class="imagenBack" [src]="urlImgBackg" alt="imagebackground">
             <p class="tipo">{{tipoSeguro}}</p>
-        </div>
-        <!-- contenedor para logo y precio de seguro-->
-        <div class="derecha">
+      </div>
+      <!-- contenedor para logo y precio de seguro-->
+      <div class="derecha">
+          <div class="derechaImagen">
             <img class="imagenLogo" [src]="urlImgLogo" alt="imagelogo">
-            <p>Antes:</p>
-            <div class="pre">{{precio_pre}}</div>
-            <p>Despues:</p>
-            <div class="pos">{{precio_pos}}</div>
-        </div>
+          </div>
+          <div class="derechaPrecios">
+            <div class="derechaPreciosTexto">
+                <p class="antes">ANTES:</p>
+                <p class="despues">DESPUÉS:</p> 
+            </div>
+            <div class="derechaPreciosValores">
+                <div class="valoresI" >$<div class="pre">{{precio_pre}}</div></div>
+                <div class="valoresD" >$<div class="pos">{{precio_pos}}</div></div>
+            </div>
+          </div>
+      </div>
 
-    </div>
+  </div>
 
-    <!--Contenedor de la cobertura de la promocion -->
-    <div class="cobertura">
-        <div>*{{cobertura1}}</div>
-        <div>*{{cobertura2}}</div>
-        <div>*{{cobertura3}}</div>
-    </div>
+  <!--Contenedor de la cobertura de la promocion -->
+  <div class="cobertura">
+    <ul class="lista">
+        <li>{{cobertura1}}</li>
+        <li>{{cobertura2}}</li>
+        <li>{{cobertura3}}</li>
+      </ul>      
+  </div>
 
-    <!--Contenedor de los iconos -->
-    <div class="buttons">
-        <button mat-raised-button color="primary">Like</button>
-        <button mat-raised-button color="primary" routerLink="/contactus">Contact</button>
-        <button mat-raised-button color="primary">Share</button>
-
-    </div>
-    
+  <!--Contenedor de los iconos -->
+  <div class="buttons">
+        <button class="btn_estilo" routerLink="/contactus">Contacto</button>
+        <span class="spacer"></span>
+  </div>
+  
 </div>
 

@@ -1,0 +1,69 @@
+<ion-header> </ion-header>
+
+<ion-content>
+  <div class="login-container">
+    <div class="login">
+      <form class="form" [formGroup]="form_login">
+        <span class="image">
+          <img class="login-icon" src="./assets/img/08.png" alt="" />
+        </span>
+
+        <span class="shadow"></span>
+
+        <div class="usuario-container">
+          <img class="user-icon" src="./assets/img/08.png" alt="" />
+
+          <input
+            class="usuario-input"
+            type="text"
+            autocomplete="off"
+            formControlName="user"
+            placeholder="usuario"
+          />
+        </div>
+
+        <div class="contrasena-container">
+          <img class="password-icon" src="./assets/img/09.png" alt="" />
+
+          <input
+            class="contrasena-input"
+            id="password"
+            [type]="tipo_input"
+            autocomplete="off"
+            formControlName="password"
+            placeholder="contraseña"
+          />
+          <!-- <p (click)="event_password()">Ver password</p> -->
+          <img
+            *ngIf="tipo_input=='text'"
+            class="eyeicon close"
+            id="eyeclose"
+            src="./assets/img/eyeClose.png"
+            alt=""
+            (click)="event_password()"
+          />
+          <img
+            *ngIf="tipo_input=='password'"
+            class="eyeicon open"
+            id="eyeopen"
+            src="./assets/img/eyeOpen.png"
+            alt=""
+            (click)="event_password()"
+          />
+        </div>
+
+        <div class="button-container">
+          <button class="submit-button" (click)="loguearse()">
+            Iniciar sesión
+          </button>
+        </div>
+
+        <div class="recuperar-contasena" href="">
+          <a href="">Haz olvidado tu contraseña?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</ion-content>

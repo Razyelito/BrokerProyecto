@@ -1,0 +1,53 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="imagenUsuario">
+      <img class="imagenicon" src="./assets/img/usuario.png" alt="" />
+    </div>
+
+    <div class="texto">
+      <h4 class="inicio-sesion">Información Personal</h4>
+    </div>
+
+    <form
+      class="formulario"
+      id="formulario"
+      action=""
+      [formGroup]="form_password"
+    >
+      <input
+        class="userdata"
+        type="password"
+        placeholder="Ingrese contrasena actual"
+        formControlName="password"
+      />
+      <input
+        class="userdata"
+        type="password"
+        placeholder="Ingrese nueva contrasena"
+        formControlName="nuevo_password"
+      />
+      <input
+        class="userdata"
+        type="password"
+        placeholder="Repetir contrasena"
+        formControlName="confirmar_password"
+      />
+    </form>
+
+    <div class="botones">
+      <p>
+        <button class="submit-button" (click)="actualizar_password()">
+          Actualizar
+        </button>
+      </p>
+      <p>
+        <button class="submit-button" routerLink="/cuenta">Cancelar</button>
+      </p>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</ion-content>

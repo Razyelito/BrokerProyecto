@@ -1,0 +1,153 @@
+.ofertaCard{
+    background-color: #114c90;
+    padding: 3px;
+    
+}
+
+.fecha{
+    display: flex;
+    color: white;
+    font-size: x-small;
+    justify-content: flex-end;
+    margin-bottom: 0.8%;
+}
+
+.fechaD, .fechaH{
+    font-size: 2.5vw
+}
+.spacer{
+    margin-right: 3%;
+}
+
+.cuerpo{
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    height: 13vh;
+}
+
+
+.derecha{
+    float: right;
+    width: 50%;
+}
+
+.izquierda{
+    float: left;
+    width: 50%;
+}
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.izquierda{
+    position: relative;
+}
+
+.derecha>p{
+    font-weight: bold;
+    font-size: large;
+}
+
+.derecha>div{
+    font-size: x-large;
+}
+
+.tipo{
+    font-size: 5vw;
+    font-weight: bold;
+    color: #114c90;
+    position: absolute;
+    bottom: -15%;
+    left: 22%;
+}
+
+.imagencontenedor{
+    position: relative;
+}
+
+.imagenBack{
+    padding: 5px;
+    position: absolute;
+    width: 65%;
+    height: auto;
+    top: -18%;
+    left: 15%
+}
+
+.imagenLogo{
+    width: 75%;
+    height: 75%;
+}
+
+.derechaImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre, .pos, .antes, .despues{
+    color: #114c90;
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+
+.derechaPreciosValores{
+    position: relative;
+    top: -15%;
+}
+
+.pre{
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+}
+
+.derechaPreciosTexto, .derechaPreciosValores{
+    display: flex;
+    justify-content: space-around;
+}
+
+.valoresI, .valoresD{
+    display: flex;
+    color: #114c90;
+    font-size: 3.5vw;
+    position: relative;
+}
+
+.cobertura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+    margin-top: 2%;
+    color: white;
+}
+
+.cobertura>div{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 3%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3%;
+    height: 4vh;
+}
+
+
+.btn_estilo{
+    background-color: #ffffff;
+    color: #114c90;
+    border-radius: 20px;
+    width: 28vw;
+    height: 3.15vh;
+    font-size: 3.5vw;
+    margin-right: 2%;
+}
+
